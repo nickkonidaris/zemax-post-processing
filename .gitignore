@@ -6,6 +6,9 @@ __pycache__/
 # C extensions
 *.so
 
+# VIM
+*.swp
+
 # Distribution / packaging
 .Python
 build/
@@ -102,3 +105,4 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+.DS_Store
