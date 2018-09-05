@@ -33,7 +33,6 @@ def read_image_analysis(filename):
             try:
                 val = uu.Quantity(val)
             except ValueError:
-                print(val)
                 pass
             except TypeError:
                 pass
@@ -44,11 +43,9 @@ def read_image_analysis(filename):
                 val = tuple(map(int, sp))
                 meta[key] = val
 
-    print(meta)
     width, height = meta["Number_of_pixels"]
 
     img = np.zeros((width, height))
-    print(width,height)
 
     i = 0
     for line in lines:

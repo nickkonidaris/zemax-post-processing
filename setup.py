@@ -12,14 +12,14 @@ with open('LICENSE') as f:
     license = f.read()
 
 setup(
-    name='sample',
+    name='zpp',
     version='0.1.0',
-    description='Sample package for Python-Guide.org',
+    description='Simple install for Zemax Post Processor',
     long_description=readme,
-    author='Kenneth Reitz',
-    author_email='me@kennethreitz.com',
-    url='https://github.com/kennethreitz/samplemod',
+    author='Nick Konidaris',
+    author_email='npk@carnegiescience.edu',
+    url='https://github.com/nickkonidaris',
     license=license,
-    packages=find_packages(exclude=('tests', 'docs'))
+    packages=find_packages(exclude=('tests', 'docs', 'sample'))
 )
 
